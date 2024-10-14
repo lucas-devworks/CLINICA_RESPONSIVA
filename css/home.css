@@ -1,0 +1,223 @@
+/* para pc */
+@media (min-width: 769px) {
+    .banner {
+        height: 400px;
+    }
+    .banner h1 {
+        font-size: 45px;
+    }
+    .links-topo img {
+        padding-left: 10px;
+    }
+}
+
+/*para telas de smartphones*/
+@media (max-width: 425px) {
+/*cabeçalho*/
+    header div { 
+        flex-direction: column;
+        flex-grow: 1;
+        }
+    .links-topo {
+        border-top: 1px solid rgb(94, 92, 92);
+        display: flex;
+        justify-content: space-evenly;
+        width: 90%;
+        font-size: 14px;
+    }
+/*banner*/
+.banner {
+    height: 200px;
+}
+.banner h1 {
+    font-size: 25px;
+}
+
+
+/*lista imagem oculta*/
+    .lista img { 
+        display: none;
+    }
+        .lista {
+            text-align: center;
+        }
+        .lista li {
+            text-align: left;
+        }
+        .lista ul {
+            padding-left: 20px;
+        }   
+    }
+/* tela de tablet /////////////*/
+@media (min-width: 426px) and (max-width: 768px) {
+    header {
+        padding: 0 10px;
+    }
+    .banner {
+        height: 400px;
+    }
+    .banner h1 {
+        font-size: 40px;
+    }
+}
+
+/* estilos globais //////////////////*/
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* topo ///////////////*/
+header {
+    width: 100%;
+    background-color: #00cad1;
+}
+header div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header img, footer img{
+    width: 100px;
+}
+.largura {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+.links-topo {
+    text-align: center;
+
+}
+.links-topo a {
+    color: #fff;
+    margin: 8px;
+}
+/*pseudo-classe*/
+.links-topo a:hover, .botao-horario a:hover {
+    color: #004c4d;
+}
+
+/* banner ////////////////////*/
+section {
+    width: 100%;
+    padding: 0 10px;
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+    background-image: url('../assets/recepcao.png');
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+}
+
+
+
+
+/* sobre a clínica //////////////////////////////*/
+/*pseudo-classe*/
+.largura div:first-child  {
+    text-align: center;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 500px;
+}
+
+/*lista*/
+.lista {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    gap: 20px;
+}
+ul {
+    margin-left: 35px;
+}
+.lista p {
+    padding: 15px 0;
+}
+
+/* 3 containers ////////////////////////*/
+.conteiner-3cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap;
+    flex-grow: 1;
+    gap: 20px;
+}
+figure {
+    width: 320px;
+    box-shadow: 0px 0px 8px 2px #0000007c;
+    border-radius: 6px;
+    text-align: center;
+}
+
+figure img {
+    width: 100%;
+}
+figcaption {
+    padding: 10px 0;
+}
+/*botão ver horário*/
+.botao-horario {
+    margin: 30px auto;
+    text-align: center;
+}
+.botao-horario a {
+    color: #fff;
+    background-color: #00cad1;
+    padding: 12px;
+    font-size: 20px;
+}
+
+/* contato /////////////////////////////////////*/
+iframe {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+/* rodapé /////////////////////////////////////*/
+footer {
+    width: 100%;
+    background-color: #0c6e71;
+    text-align: center;
+    color: #fff;
+}
+footer p {
+    padding: 10px 0;
+}
+footer div {
+    padding-bottom: 10px;
+}
+
+
+    /*animation links*/
+h1 {
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+  
+  }
